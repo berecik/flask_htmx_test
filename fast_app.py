@@ -11,7 +11,7 @@ app, rt, todos, Todo = fast_app(
 )
 
 id_currunt = "current-todo"
-url_prefix="/fast_app"
+url_prefix=""
 
 def _url(path):
     return f"{url_prefix}{path}"

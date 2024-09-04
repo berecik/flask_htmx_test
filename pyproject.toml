@@ -6,9 +6,9 @@ authors = ["beret <beret@hipisi.org.pl>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-flask = "^3.0.3"
-python-fasthtml = "^0.4.5"
+python = "^3.10"
+flask = "*"
+python-fasthtml = "*"
 
 
 [build-system]

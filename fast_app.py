@@ -54,7 +54,8 @@ async def get():
     task_list = (
         Card(Ul(*todos(), id="todo-list"), header=add_task, footer=Div(id=id_currunt)),
     )
-    title = "FastHTML To-Do List"
+    title_txt = "FastHTML To-Do List"
+    title = AX(title_txt, "https://github.com/berecik/flask_htmx_test")
     
     # Display the source code
     with open(__file__) as f:
@@ -67,7 +68,7 @@ async def get():
             H1(title))
     
     # Show main screen of the app
-    return Title(title), Main(logo, task_list, source_code, cls="container")
+    return Title(title_txt), Main(logo, task_list, source_code, cls="container")
 
 
 # Route to delete a task
